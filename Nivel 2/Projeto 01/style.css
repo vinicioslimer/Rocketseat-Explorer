@@ -5,7 +5,7 @@ body {
 }
 
 #hero {
-  width: 530px;
+  width: 520px;
   margin: auto;
 }
 
@@ -26,4 +26,7 @@ span, a {
 
 p {
   color: #7D7987;
+
+  font-size: 14px;
+  line-height: 28px;
 }
