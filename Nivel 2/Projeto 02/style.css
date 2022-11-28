@@ -70,6 +70,22 @@ section p {
 button {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
+  border-radius: 4px;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 14px 32px 15px ;
+  background: #69B99D;
+  border: 0;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: #45a784;
 }
 
 footer {
