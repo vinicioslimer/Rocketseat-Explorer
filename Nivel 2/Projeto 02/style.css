@@ -36,9 +36,14 @@ a {
   color: #1f1534;
 }
 
-h1,
-ul {
+h1, ul {
   font-family: "Mulish", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -54,10 +59,12 @@ h1 span {
   font-weight: bold;
 }
 
-p {
+section p {
   color: #7d7987;
   font-size: 14px;
   line-height: 28px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 button {
@@ -69,9 +76,13 @@ footer {
   font-size: 14px;
   line-height: 28px;
   color: #1f1534;
-  align-items: center;
+  text-align: center;
+  margin-top: 80px;
 }
 
 footer a {
+ 
   font-weight: bold;
  }
+
+
