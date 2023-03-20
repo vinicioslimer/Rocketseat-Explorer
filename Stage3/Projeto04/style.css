@@ -17,6 +17,11 @@ body {
     font-size: 1.6rem;
 }
 
+main {
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
 main p:first-child {    
    
     font-weight: 400;
@@ -31,8 +36,7 @@ main p:first-child {
     margin-bottom: 1.7rem;
 }
 
-h1 {
-   
+h1 {   
     font-weight: 800;
     font-size: 4.0rem;
     line-height: 4.8rem;
@@ -71,22 +75,53 @@ ul {
     flex-direction: column;
 }
 
-span {
+ul li span {
     font-weight: 800;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 7.2rem;
+    line-height: 8.0rem;
 
-    padding-right: 38px;
+    padding-right: 3.8rem;
 
     letter-spacing: -2px;
 
     color: #090039;
 }
 
-li {
+ul li {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
 
     color: #090039;
+
+    width: 25.7rem;
+    display: flex;
+}
+
+ul li + li {
+    margin-top: 3.2rem;
+}
+
+@media (min-width: 700px) {
+    body {
+        padding: 8rem;
+    }
+
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10rem;
+    }
+
+    main > div {
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+    }
+
+   
 }
