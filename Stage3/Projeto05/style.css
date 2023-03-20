@@ -38,13 +38,10 @@ img {
 }
 
 header {
-    margin-top: 10rem 0 8rem;
+    margin: 10rem 0 8rem;
     font-family: var(--ff-heading);
 
     text-align: center;
-
-    margin-top: 10rem;
-    margin-bottom: 8rem;
 }
 
 header p {
@@ -68,6 +65,8 @@ header h1 {
 main {
     display: grid;
     gap: 3.2rem;
+
+    padding-bottom: 10rem;
 }
 
 .card {
@@ -75,20 +74,22 @@ main {
 
     font-family: var(--ff-heading);
 }
+
 .card img {
     height: 41.6rem;
     object-fit: cover;
 
     border-radius: 6px;
 
-    transition: transform 200ms;
+    transition: all 200ms;
 }
 
 .card img:hover {
     transform: scale(1.1);
     opacity: 0.5;
-
 }
+
+
 
 .card h2 {
    position: absolute;
@@ -100,7 +101,7 @@ main {
 
    display: flex;
    flex-direction: column;
-   gap: 3.2rem;
+   gap: 2.8rem;
 }
 
 .card h2 span {
@@ -110,9 +111,42 @@ main {
     font-weight: 400;
     color: var(--fc-secondary-dark);
     padding: 0 1.6rem;
+    
+    width: fit-content;
     height: 3.8rem;
-
+    
     display: inline-flex;
     align-items: center;
-    width: fit-content;
+}
+
+header {
+    animation: topdown 700ms;
+}
+
+main {
+    animation: downtop 700ms 350ms backwards;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(15px); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);        
+    }
 }
