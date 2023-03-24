@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    max-height: 100vh;
+    width: 100vw;
+    background-image: url("./img/fundo.svg");
+    
+}
+
+.container {
+    margin: 15rem;
+   
+    justify-content: center;
+    display: grid;
+    grid-row-gap: 10rem;
+    grid-column-gap: 3rem;
+    grid-template-rows: 10vh;
+    grid-template-areas: 
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8"
+    ;
+}
+
+.hole {
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+   
+}
+
+.hole * img:nth-child(1) {
+    animation: show 700ms 350ms backwards;
+}
+
+.hole * img:nth-child(2) {
+    animation: show 700ms 350ms backwards;
+}
+
+.hole * img:nth-child(3) {
+    animation: show 700ms 350ms backwards;
+}
+
+.hole * img:nth-child(4) {
+    animation: show 700ms 350ms backwards;
+}
+
+.hole * img:nth-child(5) {
+    animation: show 700ms 350ms backwards;
+}
+
+.hole * img:nth-child(6) {
+    animation: show 700ms 350ms backwards;
+}
+
+.hole * img {
+    width: auto;
+    height: auto;
+}
+
+.t1 {
+    grid-area: t1;
+}
+
+.t2 {
+    grid-area: t2;
+}
+
+.t3 {
+    grid-area: t3;
+}
+
+.t3 {
+    grid-area: t3;
+}
+.t4 {
+    grid-area: t4;
+}
+.t5 {
+    grid-area: t5;
+}
+.t6 {
+    grid-area: t6;
+}
+.t7 {
+    grid-area: t7;
+}
+.t8 {
+    grid-area: t8;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+}
