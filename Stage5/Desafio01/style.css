@@ -86,17 +86,32 @@ h2 {
     line-height: normal;
 }
 
-img {
-    display: flex;
+#cookieClosed {
     width: 300px;
     height: 200px;
-    margin: auto;    
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    background-image: url(./assets/biscoito1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 20px 30px 0px 0px;    
+}
+  
+#cookieClosed:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
 
-button {
+#cookieOpened {
+    width: 300px;
+    height: 200px;
+    background-image: url(./assets/biscoito2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#tryAgain {
     margin: auto;
     display: flex;
     padding: 16px;
@@ -115,6 +130,10 @@ button {
     line-height: normal;
 }
 
+button:hover {
+    background-color: #d37b01;
+}
+
 .hide {
     display: none;
 } 
@@ -129,4 +148,33 @@ button {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes toFadeIn {
+    0% {
+        transform:
+        translateY(150px)
+        scale(0.1);
+    }
+
+    100% {
+        transform:
+        translateY(0px)
+        scale(1);
+    }
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
