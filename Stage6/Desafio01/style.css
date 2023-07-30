@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+nav {
+    display: flex;
+    width: 1280px;
+    height: 122px;
+    padding: 40px 719px 40px 72px;
+    align-items: center;
+    flex-shrink: 0;
+}
